@@ -30,13 +30,7 @@
       position: relative;
       min-height: 100%;
     }
-    body {
-          background-color: #f7f7f7;
-          font-family: 'Montserrat';
-          font-weight: 500;
-          /* Margin bottom by footer height */
-          margin-bottom: 60px;
-        }
+
     .main-title{
       font-family: 'Montserrat';
       font-weight: 700;
@@ -47,6 +41,14 @@
       font-family: 'Montserrat';
       font-weight: 800;
       font-size: 1.25rem;
+    }
+
+    body{
+      background-color: #f7f7f7;
+      font-family: 'Montserrat';
+      font-weight: 500;
+      /* Margin bottom by footer height */
+      margin-bottom: 60px;
     }
 
     .img-icon{
@@ -71,10 +73,6 @@
       color:#ffffff;
     }
 
-    .badge-light a:hover{
-      color:#000a0c;
-    }
-
     .badge-dark[href]:hover, .badge-dark[href]:focus{
       background-color: #000a0c;
     }
@@ -88,11 +86,7 @@
     }
 
     .card-size {
-      width: 9.25rem;
-    }
-
-    .card-main{
-      width: 15rem;
+      width: 9rem;
     }
 
     .footer {
@@ -104,123 +98,46 @@
       line-height: 60px; /* Vertically center the text there */
       background-color: #f5f5f5;
     }
-    .alert-light{
-      border: 2px solid #000a0c;
-    }
+
     </style>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand navbar-dark sticky-top bg-dark mb-4">
+
+    <nav class="navbar sticky-top navbar-dark bg-dark mb-3">
       <a class="navbar-brand" href="#">
-      	<!--img src="img/MEGA_INTERESSANTE_LOGO_VETOR.svg" width="90" height="45" class="d-inline-block align-top" alt=""-->
-        <img src="img/cn_header.svg" width="450" height="40" class="d-inline-block align-top" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-placement="bottom" title="Tooltip on bottom" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
+        <img src="img/MEGA_INTERESSANTE_LOGO_VETOR.svg" width="90" height="45" class="d-inline-block align-top" alt="">
+      </a>
 
-		</button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      	<ul class="navbar-nav mr-auto">
-
-
-	    </ul>
-      	<form class="form-inline ">
-	      	<button class="btn btn-sm btn-outline-light" disabled>Legendas:</button>
-    			<span class="badge badge-danger mx-1 my-sm-1">Programa Original Cartoon Network</span>
-    			<span class="badge badge-indigo mx-1 my-sm-1">Programa Adquirido</span>
-    			<span class="badge badge-warning mx-1 my-sm-1">Programa Warner Bros. Animation</span>
-    			<span class="badge badge-purple mx-1 my-sm-1">Bloco</span>
-    			<span class="badge badge-info mx-1 my-sm-1">Curta</span>
-  		    <span class="badge badge-success mx-1 my-sm-1">Programa Brasileiro</span>
-
-	  </form>
-      </div>
-
-
+      <form class="form-inline my-2 my-lg-0">
+        <div class="navbar-form form-group">
+          <a href="#" class="btn btn-outline-v2-info my-2 my-sm-0" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-info-circle fa-2x"></i></a>
+        </div>
+      </form>
 
     </nav>
-
-
-
     <div class="container-fluid">
+
       <div class="row">
-        <div class="col-lg-12 col-12 mt-3 mb-5">
+
+        <div class="col-lg-12 col-12 mt-3 mb-3">
           <h1 class="text-center main-title">A Evolução do Cartoon Network</h1>
           <div class="row">
-            <div class="col-10 mt-3 mb-3 mx-auto">
-              <h6 class="text-center">
+            <div class="col-10 offset-1 mt-3 mt-3 mb-5">
+              <h5 class="text-center">
                 No dia 01 de outubro de 2018, o Cartoon Network completou 26 anos de transmissão e, para comemorar essa data,
                 nós da Mega Interessante preparamos um super infográfico para mostrar toda essa trajetória.
-              </h6>
-              <h6 class="text-center">
+              </h5>
+              <h5 class="text-center">
                 Se você ainda não conhece, o Cartoon Network é um canal de televisão por assinatura que exibe desenhos animados para todas as idades,
                 com um destaque especial para suas produções originais, que fizeram com que o canal rapidamente ganhasse prestígio e
                 reconhecimento.
-              </h6>
-            </div>
-            <div class="container-fluid">
-              <div class="row ">
-                <div class="col-10 mb-3 mx-auto">
-                  <div class="alert alert-light" role="alert">
-                    <p class="alert-heading">Este infográfico dispõe de alguns elementos interativos: </p>
-                    <ul>
-                      <li>Utilize os botões “Visualizar”, localizados logo abaixo, caso queira ir diretamente a um determinado período.</li>
-                      <li>Ao clicar sobre o nome de um programa, você será redirecionado à uma página do Youtube, onde poderá assistir a um vídeo relacionado ao mesmo.</li>
-                      <li>Ao passar o mouse por cima da seção “Personagens de destaque” ,clique nas setas horizontais para controlar a exibição das imagens. As setas do teclado também poderão ser utilizadas.</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-4 col-md-4 col-12 mt-1">
-                  <div class="card card-main bg-soft-transparency-dark text-center mt-3 mb-5 mx-auto" >
-                    <div class="">
-                      <div class="card-picture">
-                        <img class="img-fluid rounded" src="img/box1.png" alt="Card image cap">
-                      </div>
-                    </div>
-                    <div class="card-body">
-                      <button type="button" name="button" class="btn btn-sm btn-outline-v2-light btn-section1">Visualizar</button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-12 mt-1">
-                  <div class="card card-main bg-soft-transparency-dark text-center mt-3 mb-5 mx-auto" >
-                    <div class="">
-                      <div class="card-picture">
-                        <img class="img-fluid rounded" src="img/box2.png" alt="Card image cap">
-                      </div>
-                    </div>
-                    <div class="card-body">
-                      <button type="button" name="button" class="btn btn-sm btn-outline-v2-light btn-section2">Visualizar</button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-12 mt-1">
-                  <div class="card card-main bg-soft-transparency-dark text-center mt-3 mb-5 mx-auto" >
-                    <div class="">
-                      <div class="card-picture">
-                        <img class="img-fluid rounded" src="img/box3.png" alt="Card image cap">
-                      </div>
-                    </div>
-                    <div class="card-body">
-                      <button type="button" class="btn btn-sm btn-outline-v2-light btn-section3">Visualizar</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-
-             <div class="col-12 line mb-5 section1"></div>
+              </h5>
             </div>
           </div>
           <div class="row">
 
-            <div class="col-12 mt-2" style="max-height:150px; background-color: #00aaf5;">
+            <div class="col-12" style="max-height:150px; background-color: #00aaf5;">
               <div class="col-lg-2 col-md-2 col-4 mt-4 mb-2 mx-auto text-center">
                 <img class="img-fluid mx-auto d-block" src="img/cartoon-network-logo-1992.png" alt="" style="">
               </div>
@@ -784,13 +701,14 @@
 
                 </div>
               </div>
+
             </div>
 
             <div class="col-12">
-              <div class="line mb-5 section2"></div>
+              <div class="line mb-3"></div>
             </div>
 
-            <div class="col-12 mt-2" style="max-height:150px; background-color: #00aaf5">
+            <div class="col-12" style="max-height:150px; background-color: #00aaf5">
               <div class="col-lg-1 col-md-2 col-4 mt-4 mb-2 mx-auto py-1">
                 <img class="img-fluid mx-auto d-block" src="img/Cartoon_Network_2004_logo.png" alt="" style="">
               </div>
@@ -1343,6 +1261,8 @@
                       </div>
                     </div>
 
+
+
                   </div>
 
                 </div>
@@ -1350,10 +1270,10 @@
             </div>
 
             <div class="col-12">
-              <div class="line mb-5 section3"></div>
+              <div class="line mb-3"></div>
             </div>
 
-            <div class="col-12 mt-2" style="max-height:150px; background-color: #00aaf5">
+            <div class="col-12" style="max-height:150px; background-color: #00aaf5">
               <div class="col-lg-1 col-md-2 col-4 mt-4 mb-2 mx-auto">
                 <img class="img-fluid mx-auto d-block" src="img/Cartoon_Network_2010.png" alt="" style="">
               </div>
@@ -1910,6 +1830,7 @@
 
                   </div>
 
+
                 </div>
               </div>
             </div>
@@ -1917,7 +1838,6 @@
             <div class="col-12">
               <div class="line"></div>
             </div>
-
         </div>
       </div>
 
@@ -1927,7 +1847,7 @@
             <div class="card bg-soft-transparency-light">
               <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
-                  <button class="btn btn-outline-v2-dark collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  <button class="btn btn-dark collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                     Fontes
                   </button>
                 </h5>
@@ -1935,37 +1855,7 @@
 
               <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
-                  <div class="row">
-                    <div class="col-12">
-                      <a target="_blank" href="https://www.cartoonnetwork.com.br/" class="btn btn-link">Cartoon Network <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                    <div class="col-12">
-                      <a target="_blank" href="https://pt.wikipedia.org/wiki/Cartoon_Network" class="btn btn-link">Wikipédia Cartoon Network <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                    <div class="col-12">
-                      <a target="_blank" href="https://pt.wikipedia.org/wiki/Cartoon_Network_(Brasil)" class="btn btn-link">Wikipédia Cartoon Network (Brasil) <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                    <div class="col-12">
-                      <a target="_blank" href="https://pt.wikipedia.org/wiki/Adult_Swim" class="btn btn-link">Wikipédia Adult Swim <i class="fas fa-external-link-alt"></i></a>
-
-                    </div>
-                    <div class="col-12">
-                      <a target="_blank" href="http://mundodasmarcas.blogspot.com/2006/05/cartoon-network-lot-of-fun.html" class="btn btn-link">Mundo das Marcas - Cartoon Network <i class="fas fa-external-link-alt"></i></a>
-
-                    </div>
-                    <div class="col-12">
-                      <a target="_blank" href="http://cartoonnetwork.wikia.com/wiki/Cartoon_Network_Wiki" class="btn btn-link">Cartoon Network Wikia <i class="fas fa-external-link-alt"></i></a>
-
-                    </div>
-                    <div class="col-12">
-                      <a target="_blank" href="https://pt.wikipedia.org/wiki/Lista_de_programas_transmitidas_pelo_Cartoon_Network" class="btn btn-link">Lista de programas transmitidos pelo Cartoon Network <i class="fas fa-external-link-alt"></i></a>
-
-                    </div>
-
-
-                  </div>
-
-
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                 </div>
               </div>
             </div>
@@ -1975,39 +1865,59 @@
 
       <footer class="footer bg-dark">
           <div class="container-fluid">
-            <span class="text-light">Mega Interessante 2000 - 2018. Desenvolvido por Henrique Medina e Julian Silva da Cunha. Todos os direitos reservados.</span>
+            <span class="text-light">Place sticky footer content here.</span>
           </div>
         </footer>
+
+    </div><!--container-fluid-->
+
+    <!-- Modal Legenda-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="" id="exampleModalLabel">Legendas/Informações</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h5 class="mb-2">Categorias dos programas</h6>
+            <div class="row">
+              <div class="col-12">
+                <p>Programa Original Cartoon Network = <span class="badge badge-danger">Programa</span></p>
+                <p>Programa Adquirido = <span class="badge badge-indigo">Programa</span></p>
+                <p>Programa da Warner Bros. Animaton = <span class="badge badge-warning">Programa</span></p>
+                <p>Programa Brasileiro = <span class="badge badge-success">Programa</span></p>
+                <p>Bloco = <span class="badge badge-purple">Programa</span></p>
+                <p>Curta = <span class="badge badge-info">Programa</span></p>
+              </div>
+            </div>
+            <h5>/Dev</h5>
+            <div class="row">
+              <div class="col-12">
+                <a href="indexold.html" class="btn btn-outline-v2-info my-2 my-sm-0">Tela alternativa 2</a>
+                <a href="index3.html" class="btn btn-outline-v2-info my-2 my-sm-0">Tela alternativa 3</a>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
     </div>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function () {
-      $('.btn-section1').click(function() {
-      $('html, body').animate({
-        scrollTop: $(".section1").offset().top
-      }, 1000)
-    }),
-      $('.btn-section2').click(function (){
-        $('html, body').animate({
-          scrollTop: $(".section2").offset().top
-        }, 1000)
-      }),
-      $('.btn-section3').click(function (){
-        $('html, body').animate({
-          scrollTop: $(".section3").offset().top
-        }, 1000)
-      })
-    });
-    </script>
+
   </body>
 </html>
