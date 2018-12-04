@@ -83,7 +83,11 @@
       border: 1px solid;
     }
 
-    .left-block{
+    .line-transparent{
+    	border: 1px transparent;
+    }
+
+    .text-block{
       background-color: #f7f7f7;
     }
 
@@ -92,7 +96,7 @@
     }
 
     .card-main{
-      width: 15rem;
+      width: 14rem;
     }
 
     .footer {
@@ -107,6 +111,33 @@
     .alert-light{
       border: 2px solid #000a0c;
     }
+
+    .border-timeline-right{
+    	border-right: 15px solid #000a0c;
+    }
+
+    .border-timeline-left{
+    	border-left: 15px solid #000a0c;
+    }
+
+    @media screen and (max-width: 992px) {
+	  .border-timeline-right{
+    	border-left: 15px solid #000a0c;
+    	border-right: none;
+    	}
+	}
+
+	.header-block{
+		border: 15px solid #000a0c;
+	}
+
+	.timeline-text{
+		font-weight: bold;
+	}
+
+
+
+
     </style>
   </head>
 
@@ -122,33 +153,25 @@
 		</button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
       	<ul class="navbar-nav mr-auto">
-
-
-	    </ul>
+	      </ul>
       	<form class="form-inline ">
 	      	<button class="btn btn-sm btn-outline-light" disabled>Legendas:</button>
-    			<span class="badge badge-danger mx-1 my-sm-1">Programa Original Cartoon Network</span>
+    			<span class="badge badge-danger mx-1 my-sm-1">Original CN</span>
     			<span class="badge badge-indigo mx-1 my-sm-1">Programa Adquirido</span>
-    			<span class="badge badge-warning mx-1 my-sm-1">Programa Warner Bros. Animation</span>
-    			<span class="badge badge-purple mx-1 my-sm-1">Bloco</span>
+    			<span class="badge badge-warning mx-1 my-sm-1">Animação Warner Bros.</span>
+    			<span class="badge badge-purple mx-1 my-sm-1">Quadro Temático</span>
     			<span class="badge badge-info mx-1 my-sm-1">Curta</span>
   		    <span class="badge badge-success mx-1 my-sm-1">Programa Brasileiro</span>
-
-	  </form>
+	      </form>
       </div>
-
-
-
     </nav>
-
-
 
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12 col-12 mt-3 mb-5">
           <h1 class="text-center main-title">A Evolução do Cartoon Network</h1>
           <div class="row">
-            <div class="col-10 mt-3 mb-3 mx-auto">
+            <div class="col-8 mt-3 mb-3 mx-auto">
               <h6 class="text-center">
                 No dia 01 de outubro de 2018, o Cartoon Network completou 26 anos de transmissão e, para comemorar essa data,
                 nós da Mega Interessante preparamos um super infográfico para mostrar toda essa trajetória.
@@ -161,7 +184,7 @@
             </div>
             <div class="container-fluid">
               <div class="row ">
-                <div class="col-10 mb-3 mx-auto">
+                <div class="col-8 mb-3 mx-auto">
                   <div class="alert alert-light" role="alert">
                     <p class="alert-heading">Este infográfico dispõe de alguns elementos interativos: </p>
                     <ul>
@@ -172,55 +195,60 @@
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-lg-4 col-md-4 col-12 mt-1">
-                  <div class="card card-main bg-soft-transparency-dark text-center mt-3 mb-5 mx-auto" >
-                    <div class="">
-                      <div class="card-picture">
-                        <img class="img-fluid rounded" src="img/box1.png" alt="Card image cap">
+
+      				<div class="container-fluid">
+        				<h2 class="text-center timeline-text">Linha do Tempo</h2>
+        				<div class="col-lg-6 offset-lg-3 col-6 offset-3" style="background: #00aaf5;">
+                      <div class="row">
+
+                        <div class="col-lg-4 col-md-4 col-12 mt-5">
+                          <div class="card card-main bg-soft-transparency-dark text-center mt-3 mb-5 mx-auto" >
+                            <div class="">
+                              <div class="card-picture">
+                                <img class="img-fluid rounded" src="img/box1.png" alt="Card image cap">
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <button type="button" name="button" class="btn btn-sm btn-outline-v2-light btn-section1">Visualizar</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-12 mt-5">
+                          <div class="card card-main bg-soft-transparency-dark text-center mt-3 mb-5 mx-auto" >
+                            <div class="">
+                              <div class="card-picture">
+                                <img class="img-fluid rounded" src="img/box2.png" alt="Card image cap">
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <button type="button" name="button" class="btn btn-sm btn-outline-v2-light btn-section2">Visualizar</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-12 mt-5">
+                          <div class="card card-main bg-soft-transparency-dark text-center mt-3 mb-5 mx-auto" >
+                            <div class="">
+                              <div class="card-picture">
+                                <img class="img-fluid rounded" src="img/box3.png" alt="Card image cap">
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <button type="button" class="btn btn-sm btn-outline-v2-light btn-section3">Visualizar</button>
+                            </div>
+                          </div>
+                        </div>
+
                       </div>
-                    </div>
-                    <div class="card-body">
-                      <button type="button" name="button" class="btn btn-sm btn-outline-v2-light btn-section1">Visualizar</button>
-                    </div>
-                  </div>
                 </div>
-
-                <div class="col-lg-4 col-md-4 col-12 mt-1">
-                  <div class="card card-main bg-soft-transparency-dark text-center mt-3 mb-5 mx-auto" >
-                    <div class="">
-                      <div class="card-picture">
-                        <img class="img-fluid rounded" src="img/box2.png" alt="Card image cap">
-                      </div>
-                    </div>
-                    <div class="card-body">
-                      <button type="button" name="button" class="btn btn-sm btn-outline-v2-light btn-section2">Visualizar</button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-12 mt-1">
-                  <div class="card card-main bg-soft-transparency-dark text-center mt-3 mb-5 mx-auto" >
-                    <div class="">
-                      <div class="card-picture">
-                        <img class="img-fluid rounded" src="img/box3.png" alt="Card image cap">
-                      </div>
-                    </div>
-                    <div class="card-body">
-                      <button type="button" class="btn btn-sm btn-outline-v2-light btn-section3">Visualizar</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-
-             <div class="col-12 line mb-5 section1"></div>
+      				</div>
+             <div class="col-12 line-transparent mb-5 section1"></div>
             </div>
           </div>
           <div class="row">
 
-            <div class="col-12 mt-2" style="max-height:150px; background-color: #00aaf5;">
+            <div class="col-12 header-block mt-2" style="">
               <div class="col-lg-2 col-md-2 col-4 mt-4 mb-2 mx-auto text-center">
                 <img class="img-fluid mx-auto d-block" src="img/cartoon-network-logo-1992.png" alt="" style="">
               </div>
@@ -229,9 +257,9 @@
               </div>
             </div>
 
-            <div class="col-lg-6 d-flex left-block" style="min-height:750px; ">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12 col-12 d-flex text-block border-timeline-right" style="min-height:750px; ">
               <div class="col-lg-12 mx-auto">
-                <div class="content mt-3 mb-4">
+                <div class="content mt-3 mb-4 px-4">
                   <h2 class="mt-3">
                     O início da trajetória
                     <div class="line mb-3"></div>
@@ -252,11 +280,11 @@
                     formando desde personagens até frases como "Daqui a pouco" e "Vem aí".
                   </p>
                 </div>
-                <div class="col-12 mt-3 mb-3">
+                <div class="col-12 mt-3 mb-3 px-4">
                   <h4 class="">Personagens de destaque</h4>
                   <div class="line mb-2"></div>
                 </div>
-                <div class="col-12 mb-3">
+                <div class="col-12 mb-3 px-4">
                   <div id="carouselSection1" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -299,9 +327,9 @@
 
             </div>
 
-            <div class="col-lg-6 d-flex left-block" style="min-height:750px;">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12 d-flex text-block border-timeline-left" style="min-height:750px;">
 
-              <div class="col-12 ">
+              <div class="col-12 px-4">
                 <div class="row">
                   <div class="col-12 mb-3">
                     <h2 class="mt-3">
@@ -311,6 +339,7 @@
                   </div>
 
                   <div class="col-12 ">
+
                     <div class="row">
                       <div class="col-lg-3 col-md-3 col-4 ">
                         <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
@@ -780,17 +809,18 @@
                         </div>
                       </div>
                     </div>
+                     <div class="col-12">
+		              <div class="line-transparent mb-5 section2"></div>
+		            </div>
                   </div>
 
                 </div>
               </div>
             </div>
 
-            <div class="col-12">
-              <div class="line mb-5 section2"></div>
-            </div>
 
-            <div class="col-12 mt-2" style="max-height:150px; background-color: #00aaf5">
+
+            <div class="col-12 header-block" >
               <div class="col-lg-1 col-md-2 col-4 mt-4 mb-2 mx-auto py-1">
                 <img class="img-fluid mx-auto d-block" src="img/Cartoon_Network_2004_logo.png" alt="" style="">
               </div>
@@ -799,10 +829,10 @@
               </div>
             </div>
 
-            <div class="col-lg-6 d-flex left-block" style="min-height:750px;" >
+            <div class="col-lg-6 d-flex text-block border-timeline-right" style="min-height:750px;" >
 
               <div class="col-12">
-                <div class="content mt-3 mb-4">
+                <div class="content mt-3 mb-4 px-4">
                   <h2 class="mt-3">
                     Nova marca, nova pegada
                     <div class="line mb-3"></div>
@@ -820,11 +850,11 @@
                     o canal também investiu na produção de novas animações, tendo lançado Hi Hi Puffy Amy Yumi, A Mansão Foster para Amigos Imaginários, O Acampamento de Lazlo, As Trapalhadas do Flapjack, Chowder e Ben 10.
                   </p>
                 </div>
-                <div class="col-12 mt-3 mb-3">
+                <div class="col-12 mt-3 mb-3 px-4">
                   <h4 class="">Personagens de destaque</h4>
                   <div class="line mb-2"></div>
                 </div>
-                <div class="col-12 mb-3">
+                <div class="col-12 mb-3 px-4">
                   <div id="carouselSection2" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -863,8 +893,8 @@
               </div>
             </div>
 
-            <div class="col-lg-6 d-flex left-block" style="min-height:750px;">
-              <div class="col-12">
+            <div class="col-lg-6 d-flex text-block border-timeline-left" style="min-height:750px;">
+              <div class="col-12 px-4">
                 <div class="row">
                   <div class="col-12 mb-3">
                     <h2 class="mt-3">
@@ -873,487 +903,493 @@
                     </h2>
                   </div>
 
-                  <div class="row">
+                  <div class="col-12 ">
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/muchalucha.png" alt="Card image cap">
+                    <div class="row">
+
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/muchalucha.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=1u_-nd9Rfrw" class="badge badge-danger">Mucha Lucha!</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=1u_-nd9Rfrw" class="badge badge-danger">Mucha Lucha!</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/krypto.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/krypto.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=9gXA1WdOzYo" class="badge badge-danger">Krypto, O super-cão</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=9gXA1WdOzYo" class="badge badge-danger">Krypto, O super-cão</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/puffy.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/puffy.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=T-kFucD6McY" class="badge badge-danger">Hi Hi Puffy Amy Yumi</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=T-kFucD6McY" class="badge badge-danger">Hi Hi Puffy Amy Yumi</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/as.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/as.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=szJH8TbWqf0" class="badge badge-purple">Adult Swim</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=szJH8TbWqf0" class="badge badge-purple">Adult Swim</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/monica.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/monica.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=VYzh66JrXuk" class="badge badge-success">Turma da Mônica</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=VYzh66JrXuk" class="badge badge-success">Turma da Mônica</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/inuyasha.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/inuyasha.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=RE8LlNWYKxQ" class="badge badge-indigo">InuYasha</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=RE8LlNWYKxQ" class="badge badge-indigo">InuYasha</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/benclassico.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/benclassico.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=LiiRbziewvg" class="badge badge-danger">Ben 10</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=LiiRbziewvg" class="badge badge-danger">Ben 10</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/chowder.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/chowder.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=ywoYQgvBN2Y" class="badge badge-danger">Chowder</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=ywoYQgvBN2Y" class="badge badge-danger">Chowder</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/winx.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/winx.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=oy9BePTDBG8" class="badge badge-indigo">Clube das Winx</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=oy9BePTDBG8" class="badge badge-indigo">Clube das Winx</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/obatman.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/obatman.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=-glnPtKpp-k" class="badge badge-warning">O Batman</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=-glnPtKpp-k" class="badge badge-warning">O Batman</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/minimaratona.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/minimaratona.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=YU4qjhFeFA0" class="badge badge-purple">Mini Maratona</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=YU4qjhFeFA0" class="badge badge-purple">Mini Maratona</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/lazlo.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/lazlo.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=u1rUagrE0fA" class="badge badge-danger">O Acampamento de Lazlo</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=u1rUagrE0fA" class="badge badge-danger">O Acampamento de Lazlo</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/amigo.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/amigo.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=vT9YbPhl7Jw" class="badge badge-danger">Meu Amigo da Escola é um Macaco</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=vT9YbPhl7Jw" class="badge badge-danger">Meu Amigo da Escola é um Macaco</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/benalienforce.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/benalienforce.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=MkMrtTy4R-8" class="badge badge-danger">Ben 10 Força Alienígena</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=MkMrtTy4R-8" class="badge badge-danger">Ben 10 Força Alienígena</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/robotboy.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/robotboy.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=9-y7-1S88Tg" class="badge badge-danger">Robotboy</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=9-y7-1S88Tg" class="badge badge-danger">Robotboy</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/clonewars.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/clonewars.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=3vycolkzl3s" class="badge badge-warning">Star Wars: A Guerra dos Clones</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=3vycolkzl3s" class="badge badge-warning">Star Wars: A Guerra dos Clones</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/semlimites.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/semlimites.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=3c2NDXH6nIo" class="badge badge-warning">Liga da Justiça Sem Limites</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=3c2NDXH6nIo" class="badge badge-warning">Liga da Justiça Sem Limites</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/foster.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/foster.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=HEu5LYqSHvg" class="badge badge-danger">A Mansão Foster para Amigos Imaginários</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=HEu5LYqSHvg" class="badge badge-danger">A Mansão Foster para Amigos Imaginários</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/naruto.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/naruto.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=h2M6qAtFlpE" class="badge badge-indigo">Naruto</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=h2M6qAtFlpE" class="badge badge-indigo">Naruto</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/sabados.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/sabados.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=ZPX2Et4j6ec" class="badge badge-danger">Os Sábados Secretos</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=ZPX2Et4j6ec" class="badge badge-danger">Os Sábados Secretos</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/flapjack.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/flapjack.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=tDXqym-TLS0" class="badge badge-danger">As Trapalhadas do Flapjack</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=tDXqym-TLS0" class="badge badge-danger">As Trapalhadas do Flapjack</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/meninasz.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/meninasz.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=iMHq-Fc2YTs" class="badge badge-danger">As Meninas Superpoderosas Geração Z</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=iMHq-Fc2YTs" class="badge badge-danger">As Meninas Superpoderosas Geração Z</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/jaco.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/jaco.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=eMtv5qL3LJ4" class="badge badge-danger">Jacó Dois Dois</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=eMtv5qL3LJ4" class="badge badge-danger">Jacó Dois Dois</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/samurai.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/samurai.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=jZwrCRH1d34" class="badge badge-indigo">Samurai X</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=jZwrCRH1d34" class="badge badge-indigo">Samurai X</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/andy.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/andy.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=YPc2jS-gq7A" class="badge badge-danger">Andy e seu Esquilo</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=YPc2jS-gq7A" class="badge badge-danger">Andy e seu Esquilo</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/historias.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/historias.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=AUIcNZdK_0I" class="badge badge-danger">Histórias de Fantasmas</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=AUIcNZdK_0I" class="badge badge-danger">Histórias de Fantasmas</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/xiaolin.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/xiaolin.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=q2ndtVrVtuc" class="badge badge-warning">Duelo Xiaolin</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=q2ndtVrVtuc" class="badge badge-warning">Duelo Xiaolin</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/dezesseis.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/dezesseis.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=0J-9fu7MgT4" class="badge badge-indigo">Dezesseis!</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=0J-9fu7MgT4" class="badge badge-indigo">Dezesseis!</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/titas.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/titas.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=7e_GM7XLdlc" class="badge badge-warning">Os Jovens Titãs</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=7e_GM7XLdlc" class="badge badge-warning">Os Jovens Titãs</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/ozzy.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/ozzy.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=kHjdZv_-9qI" class="badge badge-warning">Ozzy & Drix</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=kHjdZv_-9qI" class="badge badge-warning">Ozzy & Drix</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/bakugan1.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/bakugan1.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=Ddx3sKiPB2o" class="badge badge-indigo">Bakugan Guerreiros da Batalha</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=Ddx3sKiPB2o" class="badge badge-indigo">Bakugan Guerreiros da Batalha</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/onepiece.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/onepiece.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=Tnb_M_2PZ9g" class="badge badge-indigo">One Piece</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=Tnb_M_2PZ9g" class="badge badge-indigo">One Piece</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/espias.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/espias.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=OgX_l5vT4vY" class="badge badge-indigo">3 Espiãs Demais!</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=OgX_l5vT4vY" class="badge badge-indigo">3 Espiãs Demais!</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/onda.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/onda.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=Z_DIaIRPKVE&t=24s" class="badge badge-indigo">Na Onda!</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=Z_DIaIRPKVE&t=24s" class="badge badge-indigo">Na Onda!</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/frangos.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/frangos.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=2BBmC0gcEQw" class="badge badge-danger">Frangos Kung Fu</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=2BBmC0gcEQw" class="badge badge-danger">Frangos Kung Fu</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/bakugan2.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/bakugan2.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=YdXfIpIdvNk" class="badge badge-indigo">Bakugan Nova Vestroia</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=YdXfIpIdvNk" class="badge badge-indigo">Bakugan Nova Vestroia</a>
-                        </div>
                       </div>
+
+      					      <div class="col-12">
+      		              <div class="line-transparent mb-5 section3"></div>
+      		            </div>
                     </div>
+
 
                   </div>
+
 
                 </div>
               </div>
             </div>
 
-            <div class="col-12">
-              <div class="line mb-5 section3"></div>
-            </div>
 
-            <div class="col-12 mt-2" style="max-height:150px; background-color: #00aaf5">
+            <div class="col-12 header-block" >
               <div class="col-lg-1 col-md-2 col-4 mt-4 mb-2 mx-auto">
                 <img class="img-fluid mx-auto d-block" src="img/Cartoon_Network_2010.png" alt="" style="">
               </div>
@@ -1362,10 +1398,10 @@
               </div>
             </div>
 
-            <div class="col-lg-6 d-flex left-block float-right" style="min-height:750px;" >
+            <div class="col-lg-6 d-flex text-block border-timeline-right" style="min-height:750px;" >
 
               <div class="col-lg-12">
-                <div class="content mt-3 mb-5">
+                <div class="content mt-3 mb-5 px-4">
                   <h2 class="mt-3">
                     Voltando as suas origens
                     <div class="line mb-3"></div>
@@ -1382,11 +1418,11 @@
                     Sucessos como Hora de Aventura, Apenas Um Show , O Incrível Mundo de Gunball e Steven Universo tiveram sua origem nessa época, e o canal passou a incluir, mais do que nunca, produções brasileiras em sua grade de programação, como Irmão do Jorel e Tromba Trem.
                   </p>
                 </div>
-                <div class="col-12 mt-3 mb-3">
+                <div class="col-12 mb-3 px-4">
                   <h4 class="">Personagens de destaque</h4>
                   <div class="line mb-2"></div>
                 </div>
-                <div class="col-12 mb-3">
+                <div class="col-12 mb-3 px-4">
                   <div id="carouselSection3" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -1428,8 +1464,8 @@
               </div>
             </div>
 
-            <div class="col-lg-6 d-flex float-left" style="min-height:750px;">
-              <div class="col-12">
+            <div class="col-lg-6 d-flex border-timeline-left" style="min-height:750px;">
+              <div class="col-12 px-4">
                 <div class="row">
                   <div class="col-12 mb-3">
                     <h2 class="mt-3">
@@ -1438,488 +1474,499 @@
                     </h2>
                   </div>
 
-                  <div class="row">
+                  <div class="col-12">
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/db_super.png" alt="Card image cap">
+                    <div class="row">
+
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/db_super.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=xHtY-PVmQKg" class="badge badge-indigo">Dragon Ball Super</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=xHtY-PVmQKg" class="badge badge-indigo">Dragon Ball Super</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/omniverse.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/omniverse.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=W8zmz9ZLjQk" class="badge badge-danger">Ben 10 Omniverse</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=W8zmz9ZLjQk" class="badge badge-danger">Ben 10 Omniverse</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/jorel.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/jorel.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=7TZAu_KSVOc" class="badge badge-success">Irmão do Jorel</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=7TZAu_KSVOc" class="badge badge-success">Irmão do Jorel</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/show.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/show.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=w37KiyDwHog" class="badge badge-danger">Apenas um Show</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=w37KiyDwHog" class="badge badge-danger">Apenas um Show</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/unigata.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/unigata.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=kjaxKLCu1tY" class="badge badge-danger">Unigata!</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=kjaxKLCu1tY" class="badge badge-danger">Unigata!</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/off.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/off.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=eqTPbDcrElg" class="badge badge-purple">Cartoon Off Air</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=eqTPbDcrElg" class="badge badge-purple">Cartoon Off Air</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/kai.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/kai.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=Q1O-qmzNge0" class="badge badge-indigo">Dragon Ball Z Kai The Final Chapters</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=Q1O-qmzNge0" class="badge badge-indigo">Dragon Ball Z Kai The Final Chapters</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/acao.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/acao.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=fsGfJWPT-lk&t=78s" class="badge badge-warning">Os Jovens Titãs em Ação!</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=fsGfJWPT-lk&t=78s" class="badge badge-warning">Os Jovens Titãs em Ação!</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/toontubers.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/toontubers.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=t8djDcqdvSE" class="badge badge-info">ToonTubers</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=t8djDcqdvSE" class="badge badge-info">ToonTubers</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/legal.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/legal.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=xUSF5mhIy0Y" class="badge badge-warning">Que Legal, Scooby Doo!</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=xUSF5mhIy0Y" class="badge badge-warning">Que Legal, Scooby Doo!</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/tromba.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/tromba.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=YLpSfeA2Gt4" class="badge badge-success">Tromba Trem</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=YLpSfeA2Gt4" class="badge badge-success">Tromba Trem</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/tooncast.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/tooncast.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=tjYLRefz1ik" class="badge badge-purple">Tooncast All Stars</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=tjYLRefz1ik" class="badge badge-purple">Tooncast All Stars</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/ok.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/ok.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=0c3GmbjS_A8" class="badge badge-danger">Ok, K.O! Vamos ser Heróis</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=0c3GmbjS_A8" class="badge badge-danger">Ok, K.O! Vamos ser Heróis</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/ursos.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/ursos.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=guLZW4B-OZs" class="badge badge-danger">Ursos sem Curso</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=guLZW4B-OZs" class="badge badge-danger">Ursos sem Curso</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/meninas2.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/meninas2.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=wA2iC_F4mcI" class="badge badge-danger">As Meninas Superpoderosas</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=wA2iC_F4mcI" class="badge badge-danger">As Meninas Superpoderosas</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/steven.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/steven.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=F2DMwWH5M6M" class="badge badge-danger">Steven Universo</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=F2DMwWH5M6M" class="badge badge-danger">Steven Universo</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/tsubasa.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/tsubasa.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=BYwfts1LABM" class="badge badge-indigo">Capitão Tsubasa</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=BYwfts1LABM" class="badge badge-indigo">Capitão Tsubasa</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/benreboot.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/benreboot.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=vy5X5ylDZug" class="badge badge-danger">Ben 10 (Reboot)</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=vy5X5ylDZug" class="badge badge-danger">Ben 10 (Reboot)</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/mutante.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/mutante.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=uA5l3EaVwKE" class="badge badge-danger">Mutante Rex</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=uA5l3EaVwKE" class="badge badge-danger">Mutante Rex</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/semana.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/semana.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=uUNQ97SkWco" class="badge badge-info">Outra Semana no Cartoon</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=uUNQ97SkWco" class="badge badge-info">Outra Semana no Cartoon</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/looney.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/looney.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=zOSa4WXtVZk" class="badge badge-warning">O Show dos Looney Tunes</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=zOSa4WXtVZk" class="badge badge-warning">O Show dos Looney Tunes</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/sitio.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/sitio.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=fMtFnFutggw" class="badge badge-success">O Sítio do Pica Pau Amarelo</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=fMtFnFutggw" class="badge badge-success">O Sítio do Pica Pau Amarelo</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/pantera.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/pantera.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=jGw3eMkOjno" class="badge badge-indigo">A Turma da Pantera Cor-de-Rosa</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=jGw3eMkOjno" class="badge badge-indigo">A Turma da Pantera Cor-de-Rosa</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/corrida.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/corrida.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=xhDQuvWnQ8Q" class="badge badge-warning">Corrida Maluca</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=xhDQuvWnQ8Q" class="badge badge-warning">Corrida Maluca</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/top.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/top.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=_gRuvRopSbA" class="badge badge-purple">Top Top Toons</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=_gRuvRopSbA" class="badge badge-purple">Top Top Toons</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/tom_novo.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/tom_novo.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=96obywNgkug" class="badge badge-warning">O Show de Tom e Jerry</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=96obywNgkug" class="badge badge-warning">O Show de Tom e Jerry</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/cebola.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/cebola.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=m4Of0zXjFAA" class="badge badge-danger"> Maçã e Cebola</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=m4Of0zXjFAA" class="badge badge-danger"> Maçã e Cebola</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/titio.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/titio.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=VUwWsZmu2g0" class="badge badge-danger">Titio Avô</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=VUwWsZmu2g0" class="badge badge-danger">Titio Avô</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/oswaldo.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/oswaldo.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=Q1U4kqhjwXo" class="badge badge-success">Oswaldo</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=Q1U4kqhjwXo" class="badge badge-success">Oswaldo</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/benultimate.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/benultimate.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=WGkYDeL1wV8" class="badge badge-danger">Ben 10: Supremacia Alienígena</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=WGkYDeL1wV8" class="badge badge-danger">Ben 10: Supremacia Alienígena</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/magi.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/magi.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=Ul8s00ObnxE" class="badge badge-danger">As Poderosas Magiespadas</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=Ul8s00ObnxE" class="badge badge-danger">As Poderosas Magiespadas</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/bey.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/bey.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=AzW3r3pHOjA" class="badge badge-indigo">Beyblade Burst</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=AzW3r3pHOjA" class="badge badge-indigo">Beyblade Burst</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/hora.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/hora.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=51hTlSH064A" class="badge badge-danger">Hora de Aventura</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=51hTlSH064A" class="badge badge-danger">Hora de Aventura</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/clarencio.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/clarencio.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=Q-gIUHh9Lro" class="badge badge-danger">Clarêncio, o Otimista</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=Q-gIUHh9Lro" class="badge badge-danger">Clarêncio, o Otimista</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/gunball.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/gunball.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=M9fKqQC4K94" class="badge badge-danger">O Incrível Mundo de Gumball</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=M9fKqQC4K94" class="badge badge-danger">O Incrível Mundo de Gumball</a>
-                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-3 col-4 ">
-                      <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
-                        <div class="">
-                          <div class="card-picture">
-                            <img class="img-fluid rounded" src="img/ivandoe.png" alt="Card image cap">
+                      <div class="col-lg-3 col-md-3 col-4 ">
+                        <div class="card card-size bg-soft-transparency-light text-center mt-3 mb-5" >
+                          <div class="">
+                            <div class="card-picture">
+                              <img class="img-fluid rounded" src="img/ivandoe.png" alt="Card image cap">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=jTeTZVCi5x8" class="badge badge-info">A Jornada Heróica do Valente Príncipe Ivandoé</a>
                           </div>
                         </div>
-                        <div class="card-body">
-                          <a target="_blank" href="https://www.youtube.com/watch?v=jTeTZVCi5x8" class="badge badge-info">A Jornada Heróica do Valente Príncipe Ivandoé</a>
-                        </div>
                       </div>
+
                     </div>
 
                   </div>
 
+
+
                 </div>
+
               </div>
+
+
             </div>
 
-            <div class="col-12">
-              <div class="line"></div>
-            </div>
+
 
         </div>
+       <div class="line"></div>
       </div>
+
+
+
 
       <div class="col-12">
         <div class="row">
@@ -1974,7 +2021,7 @@
       </div>
 
       <footer class="footer bg-dark">
-          <div class="container-fluid">
+          <div class="container">
             <span class="text-light">Mega Interessante 2000 - 2018. Desenvolvido por Henrique Medina e Julian Silva da Cunha. Todos os direitos reservados.</span>
           </div>
         </footer>
